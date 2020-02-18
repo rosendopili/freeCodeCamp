@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Didact+Gothic&display=swap');
+
+html{
+  scroll-behavior: smooth;
+}
+body{
+  font-family: 'Roboto', sans-serif;
+  margin-left: 310px;
+}
+
+#navbar {
+  position: fixed;
+  min-width: 290px;
+  top: 0px;
+  left: 0px;
+  width: 300px;
+  height: 100%;
+  border-right: 10px double gray;
+}
+
+.navbar-li, .navbar-ul, a{
+  text-decoration: none;
+  list-style-type: none;
+  padding-bottom: 20px;
+  font-size: 20px;
+  letter-spacing: 2px;
+  width: 100%;
+  color: black;
+  font-weight: thin;
+}
+
+.navbar-li {
+  width: 80%;
+  margin-bottom: 20px;
+}
+
+a:hover {
+  color: green;
+}
+
+span {
+  font-weight: bold;
+}
+
+header {
+  border-bottom: 2px solid gray;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 45px;
+  font-weight: thin;
+  letter-spacing: 3px;
+  font-family: 'Didact Gothic', sans-serif;
+  text-align: center;
+}
+
+@media only screen and (max-width 815px) {
+  #navbar {
+    background-color: white;
+    position: absolute;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-height: 275px;
+    border: none;
+    z-index: 1;
+    border-bottom: 2px solid;
+  }
+}
+
+h2 {
+  font-size: 25px;
+  margin-left: 5px;
+}
+
+p {
+  margin-left: 5px;
+}
+
+.code-container {
+  background-color: lightgray;
+  padding: 5px;
+  font-size: 15px;
+  margin-left: 20px;
+}
+
+.code-box {
+  background-color: white;
+  margin: 10px;
+}
+
+.property-span {
+  margin-left: 10px;
+  color: red;
+}
+
+.value-span {
+  color: blue;
+}
+
+.selector-span {
+  color: purple;
+}
+
+#css-syntax-img {
+  width: 100%;
+  max-width: 450px;
+  height: auto;
+}
+
+.html-tag-span {
+  color: brown;
+}
+
+.comment-span {
+  color: green;
+  font-weight: normal;
+}
+
+li {
+  margin: 5px;
+}
