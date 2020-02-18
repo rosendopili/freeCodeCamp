@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Tomorrow&display=swap');
 
 html {
-  scroll-behavior: smooth; 
+  scroll-behavior: smooth;
 }
 
 body {
@@ -121,7 +121,9 @@ h5 {
 .about-img {
   width: 100%;
   height: auto;
-  max-width: 200px
+  width: 200px;
+  min-width: 50px;
+  margin-left: 0px; 
 }
 
 @media (max-width: 400px){
