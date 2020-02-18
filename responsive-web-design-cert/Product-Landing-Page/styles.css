@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic|Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Tomorrow&display=swap');
+
+body {
+  margin: 0 auto;
+  font-family: 'Nanum Gothic' , sans-serif;
+  padding-top: 150px;
+}
+
+#header {
+  background-color: hsl(360, 99%, 39%);
+  padding: 10px;
+  width: 100vw;
+  height: 100px;
+  position: fixed;
+  top: 0;
+}
+
+footer {
+  background-color: hsl(360, 99%, 39%);
+  padding: 10px;
+  width: 100vw;
+  height: auto;
+  text-align: center;
+  font-weight: bold;
+  color: white; 
+}
+#nav-bar {
+  float: right;
+  margin-right: 50px;
+}
+
+ul, li, a{
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
+    margin: 10px;
+    font-size: 20px;
+    text-shadow: 0px 0px 1px red;
+}
+
+a:hover {
+  color: white;
+  text-shadow: 0px 0px 8px black;
+}
+
+#header-img {
+  max-width: 30vw;
+  height: auto;
+  object-fit: contain;
+  margin: 20px 0;
+}
+
+
+#form-container {
+  width: 100vw;
+  height: auto;
+}
+
+#form {
+  max-width: 60vw;
+  text-align: center;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(8, 10%, 85%);
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 15px black;
+}
+
+legend {
+  font-size: 95px;
+  font-family: 'Shadows Into Light', cursive;
+}
+
+fieldset{
+  border-radius: 20px;
+  background-color: hsl(8, 40%, 90%);
+  border: none;
+}
+
+h5 {
+  margin-bottom: 8px;
+  margin-top: 0px;
+}
+
+#email {
+  width: 85%;
+  text-align: center;
+  height: 25px;
+  border-radius: 8px;
+  border: none;
+}
+
+#submit {
+  width: 80%;
+  background-color: hsl(360, 99%, 39%, .9);
+  height: 40px;
+  border-radius: 10px;
+  margin: 10px 0;
+  border: none;
+  font-size: 20px;
+  color: white;
+  letter-spacing: 2px;
+  font-weight: 200;
+}
+
+#about-container {
+  margin: 50px auto;
+  max-width: 60vw;
+  height: auto;
+  display: grid;
+  grid-gap: 20px 20px;
+  text-align: center;
+}
+.about-img {
+  width: 100%;
+  height: auto;
+  max-width: 200px
+}
+
+@media (max-width: 400px){
+
+  #header-img {
+    min-width: 220px;
+    display: inline;
+  }
+  #nav-bar {
+    mind-width: 120px;
+    display: inline;
+  }
+  a {
+    font-size: 12px;
+  }
+}
+
+.about-p{
+  max-width: 30vw;
+}
+h2{
+  max-width: 30vw;
+  font-family: 'Tomorrow', sans-serif;
+  color: hsl(0, 0%, 25%);
+  text-shadow: 0px 0px 1px hsl(0, 0%, 50%);
+}
+
+#item-one, #item-two, #item-three, #item-four{
+  display: flex;
+  flex-direction: row;
+}
+
+.about-text-container {
+  text-align: center;
+  margin-left: 10vw;
+  width: 30vw;
+  margin-top: 50px;
+}
+
+
+#video-container {
+  width: 100vw;
+  display: flex;
+  margin: 0 auto;
+}
+
+#video {
+  max-width: 684px;
+  height: 385px;
+  margin: 30px auto;
+  box-shadow: 0p 0px 40px black;
+}
