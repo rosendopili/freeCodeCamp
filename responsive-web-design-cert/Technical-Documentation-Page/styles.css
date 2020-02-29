@@ -1,12 +1,26 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Didact+Gothic&display=swap');
 
+:root {
+  --main-border-blue: #3C7799;
+  --main-bg: #204969;
+  --main-gray: #B4C3D9;
+  --main-heading: #E3EBFF;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
 html{
   scroll-behavior: smooth;
 }
 body{
   font-family: 'Roboto', sans-serif;
-  margin-left: 310px;
+  margin-left: 300px;
+  border-left: 5px solid var(--main-border-blue);
+  border-bottom: 5px solid var(--main-border-blue)
 }
 
 #navbar {
@@ -16,18 +30,25 @@ body{
   left: 0px;
   width: 300px;
   height: 100%;
-  border-right: 10px double gray;
+  background-color: var(--main-bg);
+  color: var(--main-heading);
+}
+
+#navH1 {
+  border-bottom: 5px solid var(--main-border-blue);
 }
 
 .navbar-li, .navbar-ul, a{
+  margin-top: 50px;
   text-decoration: none;
   list-style-type: none;
   padding-bottom: 20px;
   font-size: 20px;
   letter-spacing: 2px;
   width: 100%;
-  color: black;
+  color: var(--main-heading);
   font-weight: thin;
+  margin-left: 20px;
 }
 
 .navbar-li {
@@ -36,15 +57,11 @@ body{
 }
 
 a:hover {
-  color: green;
+  color: white;
 }
 
 span {
   font-weight: bold;
-}
-
-header {
-  border-bottom: 2px solid gray;
 }
 
 h1 {
@@ -54,11 +71,15 @@ h1 {
   letter-spacing: 3px;
   font-family: 'Didact Gothic', sans-serif;
   text-align: center;
+  margin-bottom: 10px;
+  background-color: var(--main-bg);
+  color: var(--main-heading);
+  border-bottom: 5px solid var(--main-border-blue);
 }
 
 @media only screen and (max-width 815px) {
   #navbar {
-    background-color: white;
+    background-color: var(--main-heading);
     position: absolute;
     top: 0;
     padding: 0;
@@ -67,24 +88,27 @@ h1 {
     max-height: 275px;
     border: none;
     z-index: 1;
-    border-bottom: 2px solid;
   }
 }
 
 h2 {
   font-size: 25px;
-  margin-left: 5px;
+  margin: 5px;
+  margin-left: 25px;
+  margin-bottom: 5px;
 }
 
 p {
-  margin-left: 5px;
+  margin: 5px;
+  margin-left: 25px;
 }
 
 .code-container {
-  background-color: lightgray;
+  background-color: var(--main-gray);
   padding: 5px;
   font-size: 15px;
-  margin-left: 20px;
+  margin: 10px;
+  margin-left: 40px;
 }
 
 .code-box {
@@ -93,7 +117,7 @@ p {
 }
 
 .property-span {
-  margin-left: 10px;
+  margin-left: 30px;
   color: red;
 }
 
@@ -122,4 +146,15 @@ p {
 
 li {
   margin: 5px;
+  margin-left: 25px;
+}
+
+h3 {
+  margin-left: 20px;
+  margin-bottom: 5px;
+}
+
+img {
+  margin: 5px;
+  margin-left: 20px;
 }
