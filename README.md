@@ -1,2 +1,1 @@
-# freeCodeCamp
 freeCodeCamp certification projects
