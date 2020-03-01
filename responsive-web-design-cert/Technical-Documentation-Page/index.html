@@ -37,11 +37,11 @@
     <p> HTML was NEVER intended to contain tags for formatting a web page!</p>
     <p>HTML was created to describe the content of a web page, like: </p>
     <div class="code-container">
-    <code> < h1 > This is a heading < /h1 > </code>
+    <code> &lt;h1&gt; This is a heading &lt;/h1&gt; </code>
     <br>
-     <code> < p > This is a paragraph. < /p ></code>
+     <code> &lt;p&gt; This is a paragraph. &lt;/p&gt;</code>
        </div>
-       <p> When tags like <code>< font ></code>, and color attributes were added to the HTML 3.2 specification, it started a nightmare for web developers. Development of large websites, where fonts and color information were added to every single page, became a long and expensive process. </p>
+       <p> When tags like &lt;font&gt;, and color attributes were added to the HTML 3.2 specification, it started a nightmare for web developers. Development of large websites, where fonts and color information were added to every single page, became a long and expensive process. </p>
       <p> To solve this problem, the World Wide Web Consortium (W3C) created CSS. </p>
       <p>CSS removed teh style formatting from the HTML page! </p>
   </section>
@@ -59,7 +59,7 @@
         <p>Each declaration includes a CSS property name and a value, separated by a colon.</p>
         <p>A CSS declaration always ends with a semicolon, and declaration blocks are surrounded by curly braces.</p>
     <div class="code-container">
-      <p> In this example all <code>< p ></code> elements will be center-aligned, with a red text color:</p>
+      <p> In this example all <code>&lt;p&gt;</code> elements will be center-aligned, with a red text color:</p>
         <div class="code-box">
     <code> <span class="selector-span">p</span> { <br>
       <span class="property-span">color</span>: <span class="value-span">red</span>; <br>
@@ -69,7 +69,7 @@
      </div>
       <h3> Example Explained </h3>
       <ul>
-        <li> <span>p</span> is a <span>selector</span> in CSS (it points to the HTML element you want to style: <code>< p ></code>).</li>
+        <li> <span>p</span> is a <span>selector</span> in CSS (it points to the HTML element you want to style: &lt;p&gt;).</li>
         <li><span>color</span> is a property, and <span>red</span> is the property value.</li>
           <li><span>text-align</span> is a property, and <span>center</span> is the property value. </li>
       </ul>
@@ -93,7 +93,7 @@
         <p> The element selector selects HTML elements based on the element name. </p>
           <div class="code-container">
             <h3>Example</h3>
-      <p> Here, all <code>< p ></code> elements will be center-aligned, with a red text color:</p>
+      <p> Here, all <code>&lt;p&gt;</code> elements will be center-aligned, with a red text color:</p>
         <div class="code-box">
     <code> <span class="selector-span">p</span> { <br>
       <span class="property-span">color</span>: <span class="value-span">red</span>; <br>
@@ -131,7 +131,7 @@
         <p> You can also specify that only specific HTML elements shoule be affected by a class. </p>
            <div class="code-container">
             <h3> Example </h3>
-             <p> In this example only <code>< p ></code> elements with class="center" will be center-aligned:</p>
+             <p> In this example only <code>&lt;p&gt;</code> elements with class="center" will be center-aligned:</p>
         <div class="code-box">
     <code> <span class="selector-span">p.center</span> { <br>
       <span class="property-span">color</span>: <span class="value-span">red</span>; <br>
@@ -142,9 +142,9 @@
         <p> HTML elements can also refer to more than one class.</p>
            <div class="code-container">
             <h3> Example </h3>
-             <p> In this example the <code>< p ></code> element will be styled according to class="center" and to class-"large":</p>
+             <p> In this example the <code>&lt;p&gt;</code> element will be styled according to class="center" and to class-"large":</p>
         <div class="code-box">
-    <code> <<span class="selector-span">p</span><span class="property-span">class</span>=<span class="value-span">"center-large"</span>>This paragraph refers to two classes.<<span>/</span><span class="selector-span">p</span>>
+    <code> &lt;<span class="selector-span">p</span><span class="property-span">class</span>=<span class="value-span">"center-large"</span>&gt; This paragraph refers to two classes. &lt;<span>/</span><span class="selector-span">p</span>&gt;
           </code>
       </div>
      </div>
@@ -215,31 +215,43 @@
     <h2> External CSS</h2>
     <p>For now, we will only cover the most popular way of inserting a style sheet and that is through importing an external style sheet</p>
     <p> With an external style sheet, you can change the look of an entire website by changing just one file!</p>
-    <p> Each HTML page must include a reference to the external style sheet file inside the <code>< link ></code> element, inside the head section.</p>
+    <p> Each HTML page must include a reference to the external style sheet file inside the <code>&lt;link&gt;</code> element, inside the head section.</p>
     <div class="code-container">
       <h3> Example </h3>
-      <p> External styles are defined within the <code>< link ></code> element, inside the <code>< head ></code> section of an HTML page:</p>
+      <p> External styles are defined within the <code>&lt;link&gt;</code> element, inside the <code>&lt;head&gt;</code> section of an HTML page:</p>
       <div class="code-box">
-        <code><<span class="html-tag-span">!DOCTYPE</span><span class="property-span"> html</span>></code><br>
-      <code><<span class="html-tag-span">html</span>></code>
+        <code>&lt;
+          <span class="html-tag-span">!DOCTYPE</span>
+          <span class="property-span"> html</span>&gt;</code><br>
+      <code>&lt;
+        <span class="html-tag-span">html</span>&gt;</code>
       <br>
-    <code> <<span class="html-tag-span">head</span>></code>
+    <code> &lt;
+      <span class="html-tag-span">head</span>&gt;</code>
     <br>
-      <code><<span class="html-tag-span">link</span><span class="property-span"> rel</span><span class="value-span">="stylesheet"</span> <span class="property-span"> type</span><span class="value-span">="text/css"</span> <span class="property-span"> href</span><span class="value-span">="mystyle.css"</span>></code>
+      <code>&lt;
+        <span class="html-tag-span">link</span>
+        <span class="property-span">rel</span><span class="value-span">="stylesheet"</span>
+        <span class="property-span">type</span><span class="value-span">="text/css"</span>
+        <span class="property-span">href</span><span class="value-span">="mystyle.css"</span>
+        /&gt;
+      </code>
     <br>
-    <code><<span class="html-tag-span">/head</span>></code>
+    <code>&lt;/
+      <span class="html-tag-span">head</span>&gt;</code>
     <br>
-      <code> <<span class="html-tag-span">body</span>></code>
+      <code> &lt;
+        <span class="html-tag-span">body</span>&gt;</code>
       <br>
       <br>
-      <code><<span class="html-tag-span">h1</span>></code>This is a heading<code><<span class="html-tag-span">/h1</span>></code>
+      <code>&lt;<span class="html-tag-span">h1</span>&gt;</code>This is a heading<code>&lt;<span class="html-tag-span">h1</span>/&gt;</code>
   <br>
-  <code><<span class="html-tag-span">p</span>></code>This is a paragraph<code><<span class="html-tag-span">/p</span>></code>
+  <code>&lt;<span class="html-tag-span">p</span>&gt;</code>This is a paragraph<code>&lt;<span class="html-tag-span">p</span>/&gt;</code>
   <br>
   <br>
-      <code><<span class="html-tag-span">/body</span>></code>
+      <code>&lt;/<span class="html-tag-span">body</span>&gt;</code>
     <br>
-<code><<span class="html-tag-span">/html</span>></code>
+<code>&lt;/<span class="html-tag-span">html</span>&gt;</code>
       </div>
     </div>
     <p>An external style sheet can be written in any text editor, and must be saved with a .css extension</p>
